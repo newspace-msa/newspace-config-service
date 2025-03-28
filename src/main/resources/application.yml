@@ -8,12 +8,18 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/newspaceProject/newspace-deploy
+          uri: https://github.com/newspace-msa/newspace-config.git
           default-label: main
+          search-paths:
+            - eureka
+            - gateway
+            - user
+            - news
+            - notice
         bootstrap: true
 
   rabbitmq:
-    host: 127.0.0.1
+    host: 52.23.178.211
     port: 5672
     username: guest
     password: guest
