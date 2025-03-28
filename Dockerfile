@@ -1,4 +1,4 @@
 FROM openjdk:17-ea-11-jdk-slim
 VOLUME /tmp
-COPY target/config-service-1.0.jar app.jar
+COPY build/libs/newspace-config-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java","-jar","app.jar"]
