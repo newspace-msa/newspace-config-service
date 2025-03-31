@@ -24,16 +24,6 @@ spring:
     username: guest
     password: guest
 
-eureka:
-  instance:
-    hostname: newspace-config-service
-    preferIpAddress: ${EUREKA_INSTANCE_PREFER_IP_ADDRESS:true}
-  client:
-    fetchRegistry: 'true'
-    registerWithEureka: 'true'
-    serviceUrl:
-      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://newspace-eureka:8070/eureka/}
-
 management:
   endpoints:
     web:
