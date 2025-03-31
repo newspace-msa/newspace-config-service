@@ -19,7 +19,7 @@ spring:
         bootstrap: true
 
   rabbitmq:
-    host: ${RABBITMQ_HOST}
+    host: ${RABBITMQ_HOST:127.0.0.1}
     port: 5672
     username: guest
     password: guest
